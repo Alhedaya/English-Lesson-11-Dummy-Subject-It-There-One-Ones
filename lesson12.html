@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 11 - It, There, One, Ones - Dummy Subject</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<style>
+body{ background: linear-gradient(45deg, white, #D1E4C4, white); height: 470vh; }
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:255px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+.buttons1{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:23px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:175px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  
+}
+.buttons1:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons1:active{
+opacity: 0.7;
+}
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:70px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ text-align: left;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: visible;}
+
+
+.dropdown{ display: flex;}
+ .dropdown button{
+  background-color: #D1E4C4; color: black; padding: 10px 30px;
+  border:none; cursor:pointer; box-shadow: 5px 5px 7px black;
+  transition:0.05s; border-radius:4px;
+ }
+
+ .dropdown a{
+  display: flex; text-decoration: none; text-align: center; padding: 10px 23px; margin-top:10px; background-color: #D1E4C4;
+  color:black; box-shadow: 5px 5px 7px black; border-radius:4px; margin-left:5px;
+ }
+
+ .dropdown .content{
+   position: absolute; min-width:100px;
+  display:none;
+ }
+
+ .dropdown:hover .content{ 
+  display:flex;
+ }
+ .dropdown:hover button{
+  background-color: #F1F7ED; color:black;
+ }
+ .dropdown a:hover{
+  background-color: #F1F7ED; color:black;
+ }
+
+
+.d{ font-size: 33px;}
+.d1 { font-size: 40px; cursor:pointer;}
+
+.div1 {  display: grid; grid-template-columns: 1fr 1fr; }
+.div2 {display: grid; grid-template-columns: 900px; justify-content: center;}
+.div4  {font-size: 30px; cursor:pointer;}
+.div3 {display: grid; grid-template-columns: 1fr 1fr 1fr; text-align: left;}
+.div5 {display: grid; grid-template-columns: 900px; justify-content: center; }
+.div6 {display: grid; grid-template-columns: 1fr 1fr;}
+.div7 {text-align: center; font-size: 40px;}
+.div8 {display: grid; grid-template-columns: 1fr 1fr 1fr;}
+.img {width:300px; height: 270px;}
+.img2 {width:300px; height: 270px; }
+
+@media screen and (max-width: 1000px){
+.d{ font-size: 25px;}
+.d1 {font-size: 30px;}
+
+.div1 {display: grid; grid-template-columns: 1fr;}
+.div2 {display: grid; grid-template-columns: 1fr;}
+.div4  {font-size: 25px;}
+.div3 {display: grid; grid-template-columns: 1fr;}
+.div5 {display: grid; grid-template-columns: 1fr;}
+.div6 {display: grid; grid-template-columns: 1fr;}
+.div7 {text-align: center; font-size: 30px;}
+.div8 {display: grid; grid-template-columns: 1fr ;}
+.wrapper { overflow-x: hidden; width: 100%; background: linear-gradient(45deg, white, #D1E4C4, white);}
+
+.img{width:150px; height: 135px;}
+.img2 {width:150px; height: 135px; }
+
+
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:50px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: hidden;}
+
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:250px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 5px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+}
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+
+<h1 class="tooltips"> <b>It &bull; There</b> and <b>One &bull; Ones</b></h1>
+
+
+<div class="div1" style=" ">
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:20px;">
+
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound1.play()" class="buttons"> It </button>
+<button onmousedown="sound2.play()" class="buttons"> There </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:20px;">
+
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound3.play()" class="buttons"> One</button>
+<button onmousedown="sound4.play()" class="buttons"> Ones </button>
+</div>
+
+</div>
+
+
+<div class="div2" style=" ">
+
+<p style="text-align: center; font-size: 33px;"></p>
+
+
+<p class="div4" style="text-align: left;  background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+English clauses always have a subject:<br><br>
+&bull; His father has just retired.<br>
+&#10162; <b>He</b> was a teacher. &#10004;<br>
+Was a teacher. &#10006;<br><br>
+
+&bull; I'm waiting for my wife.<br>
+&#10162; <b>She</b> is late. &#10004;<br>
+Is late. &#10006;<br><br>
+
+... except for the imperative:<br>
+&bull; <b>Go</b> away.<br>
+&bull; <b>Play</b> it again, please.<br>
+</p>
+
+
+
+
+
+
+<p  class="div4" style="text-align: left;  background-color:#D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;"> 
+<b>There</b><br>
+If there is no other subject, we use there to talk about:<br><br>
+&#9702; where or when something is:<br><br>
+
+&bull; <b>There's</b> an interesting book on the shelf.<br>
+&bull; <b>There'll be</b> an eclipse of the moon tonight.<br><br>
+
+&#9702; a number or amount:<br><br>
+
+&bull; <b>There is</b> plenty of bread left.<br>
+&bull; <b>There were</b> twenty people at the meeting.<br><br>
+
+&#9702; something existing or happening:<br><br>
+
+&bull; <b>There's</b> a small problem.<br>
+&bull; <b>There was</b> a nasty fight.<br><br>
+</p>
+
+
+<p  class="div4" style="text-align: left;  background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;"> 
+<b>It</b><br>
+We use <b>it</b> to talk about:<br><br>
+&#9702;  times and dates: <br><br>
+
+&bull; <b>It's</b> nearly one o'clock.<br>
+&bull; <b>It's</b> my birthday.<br><br>
+
+&#9702;  the weather:<br><br>
+
+&bull; <b>It's</b> raining.<br>
+&bull; <b>It was</b> getting cold.<br><br>
+
+&#9702;  We use it with the verb <b>be</b> and an <b>–ing</b> form or <b>to-infinitive</b> to express opinions:<br><br>
+
+&bull; <b>It's</b> great living here.<br>
+&bull; <b>It's</b> nice to meet you.
+</p>
+
+
+<p class="div4" style="text-align:  background-color:#D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;"> 
+<b>One &bull; Ones</b><br>
+We use <u>One singular</u> and <u>Ones plural</u>:<br><br>
+&#9702;   after an adjective:<br><br>
+
+&bull; See those two girls? Helen is the <b>tall one</b> and Jane is the <b>short one</b>.<br>
+&bull; Which is your car, the <b>red one</b> or the <b>blue one</b>?<br><br>
+
+&#9702;   after the:<br><br>
+
+&bull; See those two girls? Helen is <b>the one</b> on the left.<br>
+&bull; Let's look at the photographs – <b>the ones</b> you took in Paris.<br><br>
+
+&#9702;   after which in questions:<br><br>
+
+&bull; You can borrow a book.<br>
+&emsp; Which <b>one</b> do you want?<br>
+&emsp; Which <b>ones</b> are yours?
+</p>
+
+</div>
+<script>
+
+  var sound1 = new Audio();
+  sound1.src = "it.mp3";
+
+  var sound2 = new Audio();
+  sound2.src = "there.mp3";
+
+  var sound3 = new Audio();
+  sound3.src = "one.mp3";
+
+  var sound4 = new Audio();
+  sound4.src = "ones.mp3";
+
+  var sound5 = new Audio();
+  sound5.src = ".mp3";
+
+  var sound6 = new Audio();
+  sound6.src = "when.mp3";
+
+  var sound7 = new Audio();
+  sound7.src = "where.mp3";
+
+  var sound8 = new Audio();
+  sound8.src = "why.mp3";
+
+  var sound9 = new Audio();
+  sound9.src = "how.mp3";
+
+  var sound10 = new Audio();
+  sound10.src = "howmuchmany.mp3";
+
+  var sound11 = new Audio();
+  sound11.src = "something.mp3";
+
+  var sound12 = new Audio();
+  sound12.src = ".mp3";
+
+ 
+  var sound13 = new Audio();
+  sound13.src = "itself.mp3";
+
+  
+
+
+</script>
+</body>
+</html>
